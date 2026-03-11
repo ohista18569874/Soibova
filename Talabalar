@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>402-guruh Talabalari Ro'yxati</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: #0a0f1e;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(30,80,160,0.35) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 90%, rgba(100,40,180,0.25) 0%, transparent 55%);
+      font-family: 'Lora', Georgia, serif;
+      color: #e8e4d9;
+      padding: 48px 16px 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page-wrapper {
+      max-width: 860px;
+      width: 100%;
+    }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      margin-bottom: 52px;
+      position: relative;
+    }
+
+    .emblem {
+      width: 72px; height: 72px;
+      margin: 0 auto 20px;
+      border: 2px solid rgba(200,170,80,0.6);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(200,170,80,0.08);
+      animation: pulse 3s ease-in-out infinite;
+    }
+    .emblem svg { width: 36px; height: 36px; fill: rgba(200,170,80,0.8); }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(200,170,80,0.3); }
+      50%       { box-shadow: 0 0 0 14px rgba(200,170,80,0); }
+    }
+
+    .uni-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.1rem, 3vw, 1.55rem);
+      font-weight: 900;
+      color: #c8aa50;
+      letter-spacing: 0.04em;
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .divider-line {
+      width: 120px; height: 2px;
+      background: linear-gradient(90deg, transparent, #c8aa50, transparent);
+      margin: 16px auto;
+    }
+
+    .faculty-name {
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      color: rgba(200,170,80,0.75);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+
+    .direction-name {
+      font-size: clamp(0.8rem, 1.8vw, 0.97rem);
+      color: rgba(232,228,217,0.65);
+      margin-bottom: 14px;
+    }
+
+    .group-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #c8aa50 0%, #e8d080 100%);
+      color: #0a0f1e;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 22px;
+      border-radius: 30px;
+      margin-top: 4px;
+    }
+
+    /* TABLE */
+    .table-wrapper {
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(200,170,80,0.2);
+      border-radius: 16px;
+      overflow: hidden;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      background: linear-gradient(90deg, rgba(200,170,80,0.18), rgba(200,170,80,0.08));
+      border-bottom: 1.5px solid rgba(200,170,80,0.4);
+    }
+
+    thead th {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c8aa50;
+      padding: 18px 20px;
+      text-align: left;
+    }
+
+    thead th:first-child { text-align: center; width: 70px; }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,0.055);
+      transition: background 0.25s ease, transform 0.2s ease;
+      animation: fadeIn 0.4s ease both;
+    }
+    tbody tr:last-child { border-bottom: none; }
+
+    tbody tr:hover {
+      background: rgba(200,170,80,0.07);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* stagger delay */
+    tbody tr:nth-child(1)  { animation-delay: 0.05s; }
+    tbody tr:nth-child(2)  { animation-delay: 0.09s; }
+    tbody tr:nth-child(3)  { animation-delay: 0.13s; }
+    tbody tr:nth-child(4)  { animation-delay: 0.17s; }
+    tbody tr:nth-child(5)  { animation-delay: 0.21s; }
+    tbody tr:nth-child(6)  { animation-delay: 0.25s; }
+    tbody tr:nth-child(7)  { animation-delay: 0.29s; }
+    tbody tr:nth-child(8)  { animation-delay: 0.33s; }
+    tbody tr:nth-child(9)  { animation-delay: 0.37s; }
+    tbody tr:nth-child(10) { animation-delay: 0.41s; }
+    tbody tr:nth-child(11) { animation-delay: 0.45s; }
+    tbody tr:nth-child(12) { animation-delay: 0.49s; }
+    tbody tr:nth-child(13) { animation-delay: 0.53s; }
+    tbody tr:nth-child(14) { animation-delay: 0.57s; }
+    tbody tr:nth-child(15) { animation-delay: 0.61s; }
+    tbody tr:nth-child(16) { animation-delay: 0.65s; }
+    tbody tr:nth-child(17) { animation-delay: 0.69s; }
+    tbody tr:nth-child(18) { animation-delay: 0.73s; }
+    tbody tr:nth-child(19) { animation-delay: 0.77s; }
+    tbody tr:nth-child(20) { animation-delay: 0.81s; }
+    tbody tr:nth-child(21) { animation-delay: 0.85s; }
+    tbody tr:nth-child(22) { animation-delay: 0.89s; }
+    tbody tr:nth-child(23) { animation-delay: 0.93s; }
+
+    td {
+      padding: 14px 20px;
+      font-size: 0.96rem;
+      color: #ddd9ce;
+      vertical-align: middle;
+    }
+
+    td:first-child {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: rgba(200,170,80,0.7);
+    }
+
+    .surname { font-weight: 600; color: #ece8dd; }
+    .firstname { color: rgba(232,228,217,0.75); font-style: italic; }
+
+    tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.018);
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 40px;
+      text-align: right;
+      width: 100%;
+      padding-right: 8px;
+    }
+
+    .prepared-label {
+      font-size: 0.82rem;
+      color: rgba(200,170,80,0.5);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .prepared-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #c8aa50;
+      font-style: italic;
+    }
+
+    .footer-line {
+      width: 180px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(200,170,80,0.5));
+      margin: 10px 0 0 auto;
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <div class="emblem">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+    </div>
+    <div class="uni-name">Samarqand Davlat Pedagogika Instituti</div>
+    <div class="divider-line"></div>
+    <div class="faculty-name">Aniq va amaliy fanlar fakulteti</div>
+    <div class="direction-name">Matematika va informatika yo'nalishi</div>
+    <div class="group-badge">402 — Guruh Talabalari</div>
+  </header>
+
+  <!-- TABLE -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Familiya</th>
+          <th>Ism</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td class="surname">Aliyev</td><td class="firstname">Jasur</td></tr>
+        <tr><td>2</td><td class="surname">Botirov</td><td class="firstname">Dilshod</td></tr>
+        <tr><td>3</td><td class="surname">Choriyev</td><td class="firstname">Bobur</td></tr>
+        <tr><td>4</td><td class="surname">Davlatov</td><td class="firstname">Sanjar</td></tr>
+        <tr><td>5</td><td class="surname">Ergashev</td><td class="firstname">Ulugbek</td></tr>
+        <tr><td>6</td><td class="surname">Fozilova</td><td class="firstname">Nilufar</td></tr>
+        <tr><td>7</td><td class="surname">G'aniyev</td><td class="firstname">Otabek</td></tr>
+        <tr><td>8</td><td class="surname">Hamidov</td><td class="firstname">Sherzod</td></tr>
+        <tr><td>9</td><td class="surname">Isoqov</td><td class="firstname">Mansur</td></tr>
+        <tr><td>10</td><td class="surname">Jalilova</td><td class="firstname">Zulfiya</td></tr>
+        <tr><td>11</td><td class="surname">Karimov</td><td class="firstname">Asilbek</td></tr>
+        <tr><td>12</td><td class="surname">Lutfullayev</td><td class="firstname">Eldor</td></tr>
+        <tr><td>13</td><td class="surname">Mirzayeva</td><td class="firstname">Mohira</td></tr>
+        <tr><td>14</td><td class="surname">Nishonov</td><td class="firstname">Farrux</td></tr>
+        <tr><td>15</td><td class="surname">Ortiqov</td><td class="firstname">Ravshan</td></tr>
+        <tr><td>16</td><td class="surname">Pulatova</td><td class="firstname">Sarvinoz</td></tr>
+        <tr><td>17</td><td class="surname">Qodirov</td><td class="firstname">Husan</td></tr>
+        <tr><td>18</td><td class="surname">Rahimov</td><td class="firstname">Behruz</td></tr>
+        <tr><td>19</td><td class="surname">Sotvoldiyev</td><td class="firstname">Kamol</td></tr>
+        <tr><td>20</td><td class="surname">Toshmatov</td><td class="firstname">Laziz</td></tr>
+        <tr><td>21</td><td class="surname">Umarov</td><td class="firstname">Akbar</td></tr>
+        <tr><td>22</td><td class="surname">Xoliqov</td><td class="firstname">Nodir</td></tr>
+        <tr><td>23</td><td class="surname">Yo'ldoshev</td><td class="firstname">Temur</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="prepared-label">Tayyorladi</div>
+    <div class="prepared-name">Soibova Ohista</div>
+    <div class="footer-line"></div>
+  </footer>
+
+</div>
+</body>
+</html>
